@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" />
-  </head>
-  <body>
 
+<head>
+  <link rel="shortcut icon" href="#">
+  <meta charset="utf-8" />
+  <!-- <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" /> -->
+  <link rel="stylesheet"
+  href="basic_search.css" />
+</head>
 
+<body>
 
+  <div id = 'before_searchbox'>
 
-
-
-
-    <div> 
-
-      <button onclick=preQuery()> Pre-Search  </button>      
-
+    <div>
+      <p>Div Color Coding:</p>
+      <button onclick=randomDivBg()>
+      Random Div Background
+      </button>
     </div>
+
+    <div>
+      <!-- Button for query the available indexes from meilisearch search first -->
+      <button onclick=preQuery()> Pre-Search </button>  
+    </div>
+
     <div id="index_chooser">
-      
+      <!-- one button for each index -->
+      <p>Available Indexes:</p>
+    
     </div>
 
-
-
-
-
-
-
-    <div class="wrapper">
-      <div id="searchbox" focus></div>
-      <div id="hits"></div>
+    <div>
+      <div class="wrapper">
+        <div> Insert Searchbox Here </div>
+        <div id="searchbox" focus></div>
+        <div id="hits"></div>
+      </div>
     </div>
-  </body>
-  <script src="./meilisearch.umd.js"></script>
-  <!-- <script src='https://cdn.jsdelivr.net/npm/meilisearch@latest/dist/bundles/meilisearch.umd.js'></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch@0.3.2/dist/instant-meilisearch.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
-  <script src="./index.js"></script>
+    
+  </div>
+  
+  <hr>
+
+  
+</body>
+<script src="./meilisearch.umd.js"></script>
+<!-- <script src='https://cdn.jsdelivr.net/npm/meilisearch@latest/dist/bundles/meilisearch.umd.js'></script> -->
+<script
+  src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch@0.3.2/dist/instant-meilisearch.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+<script src="./index.js"></script>
+<link rel="stylesheet" href="index.css">
+
 </html>

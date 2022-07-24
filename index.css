@@ -1,0 +1,32 @@
+#index_chooser {
+    /* width: 100%; */
+    /* text-align: center; */
+}
+
+#before_searchbox div {
+    padding: 10px;
+}
+
+button {
+    /* height:60px;  */
+    /* width:100px;  */
+    /* margin: -20px -50px;  */
+    position:relative;
+    /* top:50%;  */
+    left:50%;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+}
+
+p {
+    /* height:60px;  */
+    /* width:100px;  */
+    /* margin: -20px -50px;  */
+    position:relative;
+    /* top:50%;  */
+    left:50%;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+}
