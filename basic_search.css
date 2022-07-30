@@ -28,7 +28,7 @@ body{
     top: 20%;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px 0;
+    padding: 10px 0;
   
   }
   
@@ -196,7 +196,7 @@ body{
   .ais-Hits--empty {
     box-sizing: border-box;
     background-color: green;
-    position: absolute;
+    /* position: absolute; */
     padding: 1rem;
     margin: 0;
     margin-top: 5px;
@@ -205,7 +205,7 @@ body{
   
   .ais-Hits .ais-Hits-list {
     display: block;
-    position: absolute;
+    /* position: absolute; */
     top: 5px;
     left: 0;
     right: 0;
@@ -235,7 +235,7 @@ body{
     box-sizing: border-box;
     display: block;
     position: relative;
-    padding: 1rem;
+    /* padding: 1rem; */
     box-shadow: 0 2px 5px 0 #e3e5ec;
     width: 100%;
     color: #808394;
@@ -264,5 +264,26 @@ body{
       font-weight: 200;
   }
   
-  
-  
+  .ais-Pagination-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .ais-Pagination-item {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e3e5ec;
+    border-radius: 3px;
+    color: #808394;
+    font-weight: 500;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .ais-Pagination-list ::marker {
+    /* content: "🧡 "; */
+  }

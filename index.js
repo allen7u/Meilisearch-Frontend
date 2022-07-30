@@ -103,6 +103,9 @@ function query(index_Name) {
         </div>
       `
       }
+    }),
+    instantsearch.widgets.pagination({
+      container: "#pagination"
     })
   ]);
   search.start();
