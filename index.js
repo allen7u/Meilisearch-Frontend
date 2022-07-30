@@ -71,11 +71,26 @@ function query(index_Name) {
   });
   search.addWidgets([
     instantsearch.widgets.searchBox({
-      container: "#searchbox"
+      container: "#searchbox",
     }),
     instantsearch.widgets.configure({ hitsPerPage: 8 }),
     instantsearch.widgets.hits({
       container: "#hits",
+      escapeHTML: true,
+      transformItems(items) {
+        console.log(items)
+        for(let i=0; i<items.length; i++){
+          // items[i]._highlightResult.content.value = items[i]._highlightResult.content.value.replace(/<em>/g, '<span style="background-color:yellow">').replace(/<\/em>/g, '</span>')
+          items[i]._highlightResult.content.value = items[i]._highlightResult.content.value.replace(/__LINEBREAK__/g, '<br>')
+          // items[i]._highlightResult.content.value = `<div style = "background-color:yellow">\
+          // ${items[i]._highlightResult.content.value}</div>`
+        }
+        return items
+        // return items.map(item => ({
+        //   ...item,
+        //   name: item.name.toUpperCase(),
+        // }));
+      },
       templates: {
         item: `
         <div>
